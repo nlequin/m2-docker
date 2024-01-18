@@ -1,0 +1,9 @@
+Commandes:
+
+docker build -t postgresdb ./
+docker run -d --name postgresdb-container -p 5432:5432 postgresdb
+docker exec -it postgresdb-container psql -U postgres -W hello-exec
+
+
+Requête SQL:
+SELECT COUNT(*) FROM personnes WHERE age>30;

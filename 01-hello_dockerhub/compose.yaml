@@ -1,0 +1,6 @@
+services:
+  web:
+    platform: linux/arm64
+    image: docsseo91/stardocker:v1
+    ports:
+      - "8080:80"
